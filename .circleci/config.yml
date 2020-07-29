@@ -15,6 +15,9 @@ jobs:
           MULE_ENV: SANDBOX
           MULE_WORKER_TYP: MICRO
           MULE_WORKER: 1
+          MULE_USERNAME: ganesh_08July2020
+          MULE_PASSWORD: Mulesoft@2019
+          
     steps:
       - checkout
       - restore_cache:
@@ -34,4 +37,4 @@ jobs:
       - run:
           name: cloudhub deployment
           command: |
-                mvn -s settings.xml clean deploy -DmuleDeploy -DMULE_ENV=${MULE_ENV} -DMULE_VERSION=${MULE_VERSION} -DMULE_APP_NAME=${MULE_APP_NAME} -DMULE_WORKER_TYP=${MULE_WORKER_TYP} -DMULE_WORKER=${MULE_WORKER} -DMULE_USERNAME=ganesh_08July2020 -Dcloud_hub_password= Mulesoft@2019
+                mvn -s settings.xml clean deploy -DmuleDeploy -DMULE_ENV=${MULE_ENV} -DMULE_VERSION=${MULE_VERSION} -DMULE_APP_NAME=${MULE_APP_NAME} -DMULE_WORKER_TYP=${MULE_WORKER_TYP} -DMULE_WORKER=${MULE_WORKER} -DMULE_USERNAME=${MULE_USERNAME} -Dcloud_hub_password=${MULE_PASSWORD}
