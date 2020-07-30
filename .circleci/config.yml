@@ -12,9 +12,7 @@ jobs:
         environment:
           MULE_VERSION: 4.3.0
           MULE_APP_NAME: test-mule-gn-pgd
-          MULE_ENV: Sandbox
-          MULE_WORKER_TYP: MICRO
-          MULE_WORKER: 1
+          MULE_WORKER_TYPE: MICRO
           
     steps:
       - checkout
@@ -35,4 +33,4 @@ jobs:
       - run:
           name: cloudhub deployment
           command: |
-                mvn -s settings.xml clean deploy -DmuleDeploy -DMULE_ENV=${MULE_ENV} -DMULE_VERSION=${MULE_VERSION} -DMULE_APP_NAME=${MULE_APP_NAME} -DMULE_WORKER_TYP=${MULE_WORKER_TYP} -DMULE_WORKER=${MULE_WORKER} -DMULE_USERNAME=${MULE_USERNAME} -Dcloud_hub_password=${MULE_PASSWORD}
+                mvn -s settings.xml clean deploy -DmuleDeploy -DMULE_ENV=${MULE_ENV} -DMULE_VERSION=${MULE_VERSION} -DMULE_APP_NAME=${MULE_APP_NAME} -DMULE_WORKER_TYP=${MULE_WORKER_TYPE} -DMULE_WORKER=${MULE_WORKER} -DMULE_USERNAME=${MULE_USERNAME} -Dcloud_hub_password=${MULE_PASSWORD}
