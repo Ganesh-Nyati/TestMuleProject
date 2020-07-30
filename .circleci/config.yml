@@ -15,8 +15,6 @@ jobs:
           MULE_ENV: Sandbox
           MULE_WORKER_TYP: MICRO
           MULE_WORKER: 1
-          MULE_USERNAME: ganesh_08July2020
-          MULE_PASSWORD: Mulesoft@2019
           
     steps:
       - checkout
