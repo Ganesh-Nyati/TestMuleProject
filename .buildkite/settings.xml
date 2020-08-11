@@ -6,6 +6,11 @@
 			<username>verdigris.nexus</username>
 			<password>Lmuuknnx</password>
 		</server>
+		<server>
+			<id>git</id>
+			<username>Ganesh-Nyati</username>
+			<password>TestGitHub2020</password>
+		</server>
 	</servers>
 	<pluginGroups>
 		<pluginGroup>org.mule.tools</pluginGroup>

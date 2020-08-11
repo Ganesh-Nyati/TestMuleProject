@@ -16,6 +16,11 @@
 		<app.runtime>4.2.2-hf2</app.runtime>
 		<mule.maven.plugin.version>3.2.7</mule.maven.plugin.version>
 	</properties>
+		<scm>
+		<connection>scm:git:https://github.com/Ganesh-Nyati/TestMuleProject.git</connection>
+		<developerConnection>scm:git:https://github.com/Ganesh-Nyati/TestMuleProject.git</developerConnection>
+		<url>https://github.com/Ganesh-Nyati/TestMuleProject.git</url>
+    </scm>
 
 	<build>
   <plugins>
